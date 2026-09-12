@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomaz Augusto — Computer Science Student &amp; Developer</title>
+  <meta name="description" content="Portfolio of Thomaz Augusto Araújo Silva, a Computer Science student at UFV building web software, contributing to a Junior Enterprise, and teaching Git &amp; GitHub." />
+  <meta name="theme-color" content="#f6f5f1" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="layout">
+    <!-- ============ SIDEBAR / NAV ============ -->
+    <header class="sidebar" id="sidebar">
+      <div class="sidebar__top">
+        <a class="brand" href="#top" aria-label="Thomaz Augusto — home">
+          <span class="brand__mark" aria-hidden="true">TA</span>
+          <span class="brand__text">Thomaz Augusto</span>
+        </a>
+        <div class="sidebar__top-actions">
+          <button class="theme-toggle theme-toggle--compact" id="themeToggleMobile" type="button" aria-pressed="false">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+            <span class="sr-only">Toggle dark mode</span>
+          </button>
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ol>
+          <li><a href="#about"><span class="nav-index">01</span>About</a></li>
+          <li><a href="#skills"><span class="nav-index">02</span>Skills</a></li>
+          <li><a href="#projects"><span class="nav-index">03</span>Projects</a></li>
+          <li><a href="#experience"><span class="nav-index">04</span>Experience</a></li>
+          <li><a href="#contact"><span class="nav-index">05</span>Contact</a></li>
+        </ol>
+
+        <ul class="social-links social-links--mobile" aria-label="External profiles">
+          <li>
+            <a href="https://github.com/essashr" target="_blank" rel="noopener noreferrer">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/thomaz-augusto-8017a62b7/" target="_blank" rel="noopener noreferrer">
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:thomazaugustoth13@gmail.com">
+              Email <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__bottom">
+        <ul class="social-links" aria-label="External profiles">
+          <li>
+            <a href="https://github.com/essashr" target="_blank" rel="noopener noreferrer">
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/thomaz-augusto-8017a62b7/" target="_blank" rel="noopener noreferrer">
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:thomazaugustoth13@gmail.com">
+              Email <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="theme-toggle" id="themeToggleDesktop" type="button" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+          <span class="theme-toggle__label">Dark mode</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <main id="main">
+
+      <!-- ---------- HERO ---------- -->
+      <section class="hero" id="top" aria-label="Introduction">
+        <div class="hero__intro">
+          <p class="eyebrow-plain">Florestal, Minas Gerais, Brazil</p>
+          <h1>Thomaz Augusto<br />Araújo Silva</h1>
+          <p class="hero__role">Computer Science student, building web software and learning in public.</p>
+          <p class="hero__lede">
+            I study Computer Science at UFV, contribute to a student-run Junior Enterprise,
+            and work on a university project that applies what I'm learning to something a
+            real classroom will use. I like the parts of software that are collaborative:
+            code review, pairing, and explaining things clearly enough that someone else can
+            pick them up.
+          </p>
+          <div class="hero__cta">
+            <a class="button button--primary" href="#projects">View my projects</a>
+            <a class="button button--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="status-panel" aria-label="Current activity">
+          <p class="status-panel__title"><span class="dot" aria-hidden="true"></span>Currently</p>
+          <ul>
+            <li>
+              <span class="status-panel__role">Developer</span>
+              <span class="status-panel__org">SetApp Junior Enterprise</span>
+              <span class="status-panel__date">2025 — Present</span>
+            </li>
+            <li>
+              <span class="status-panel__role">Junior Developer</span>
+              <span class="status-panel__org">UFV Integrative Project</span>
+              <span class="status-panel__date">2026 — Present</span>
+            </li>
+            <li>
+              <span class="status-panel__role">Student</span>
+              <span class="status-panel__org">B.S. Computer Science, UFV</span>
+              <span class="status-panel__date">4th semester</span>
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- ---------- ABOUT ---------- -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section__head">
+          <span class="section__index">01</span>
+          <h2 id="about-title">About</h2>
+        </div>
+        <div class="section__body about__body">
+          <p>
+            I'm a Computer Science student at Universidade Federal de Viçosa (UFV), Campus
+            Florestal, currently in my fourth semester. Before this, I completed a technical
+            degree in Information Technology at the same campus, integrated with high school —
+            so by the time I started my bachelor's, I already had a foundation in programming
+            and a first real project shipped.
+          </p>
+          <p>
+            Right now most of my time outside classes goes into two things: building the
+            institutional website for SetApp, UFV's Junior Enterprise, and working with a group
+            of more senior Computer Science students on an educational game for local
+            4th-graders. Both have pushed me to work inside a team's existing codebase and
+            conventions, rather than starting from a blank file.
+          </p>
+          <p>
+            I'm also interested in how AI-assisted tools change the way developers learn and
+            debug — not as a shortcut, but as something worth understanding well. I recently
+            co-instructed a Git &amp; GitHub workshop for IT students, which is the kind of
+            teaching-by-doing I'd like to keep making time for.
+          </p>
+        </div>
+      </section>
+
+      <!-- ---------- SKILLS ---------- -->
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section__head">
+          <span class="section__index">02</span>
+          <h2 id="skills-title">Skills &amp; technologies</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="chip-list">
+              <li>C</li><li>Java</li><li>Python</li><li>JavaScript</li><li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Web &amp; development</h3>
+            <ul class="chip-list">
+              <li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Spring Boot</li><li>REST APIs</li><li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Core CS</h3>
+            <ul class="chip-list">
+              <li>Object-Oriented Programming</li><li>Data Structures</li><li>Algorithms</li><li>Databases</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; environment</h3>
+            <ul class="chip-list">
+              <li>Git</li><li>GitHub</li><li>Linux / WSL</li><li>VS Code</li><li>Quartus</li><li>Icarus Verilog</li><li>Valgrind</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Languages spoken</h3>
+            <ul class="chip-list">
+              <li>Portuguese — Native</li><li>English — Intermediate/Advanced</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- PROJECTS ---------- -->
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section__head">
+          <span class="section__index">03</span>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+
+        <div class="cardes" id="cardes">
+          <div class="cardes__inner">
+
+            <article class="carde carde--feature">
+              <div class="carde__top">
+                <p class="carde__kicker">Capstone project · Live</p>
+                <h3>Nuntiun</h3>
+                <p class="carde__tagline">A free, mobile-manageable news platform</p>
+              </div>
+              <p class="carde__desc">
+                My capstone project for the Technical Degree in Information Technology: a news
+                publishing platform designed to be fully managed from a smartphone, with a
+                focus on accessibility and easy content management for whoever runs it.
+              </p>
+              <ul class="carde__bullets">
+                <li>Deployed on Vercel</li>
+                <li>Data managed with Firebase Realtime Database</li>
+                <li>Built around mobile-first content management</li>
+              </ul>
+              <div class="carde__tags">
+                <span>Firebase Realtime Database</span>
+                <span>Vercel</span>
+              </div>
+              <div class="carde__links">
+                <a class="cta" href="https://nuntiun.vercel.app" target="_blank" rel="noopener noreferrer">
+                  View live project ↗
+                </a>
+                <a class="cta cta--secondary" href="https://github.com/essashr/nuntiun" target="_blank" rel="noopener noreferrer">
+                  Source on GitHub ↗
+                </a>
+              </div>
+            </article>
+
+            <article class="carde">
+              <div class="carde__top">
+                <p class="carde__kicker">2025 — Present</p>
+                <h3>SetApp institutional website</h3>
+                <p class="carde__tagline">Junior Enterprise site, built with the team</p>
+              </div>
+              <p class="carde__desc">
+                Contributing to the institutional website for SetApp, UFV's Junior Enterprise —
+                building responsive, reusable pages and components, including search and
+                event-related interfaces, and collaborating through branches, merges, and pull
+                requests.
+              </p>
+              <div class="carde__tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>Vite</span>
+              </div>
+              <p class="carde__note">Internal Junior Enterprise project — no public link available.</p>
+            </article>
+
+            <article class="carde">
+              <div class="carde__top">
+                <p class="carde__kicker">2026 — Present · In progress</p>
+                <h3>UFV Integrative Project</h3>
+                <p class="carde__tagline">Educational game for local 4th-graders</p>
+              </div>
+              <p class="carde__desc">
+                Working with 6th-semester Computer Science students to build an educational
+                game for 4th-grade students in the local community, applying object-oriented
+                programming and database concepts within a mixed-experience team.
+              </p>
+              <div class="carde__tags">
+                <span>OOP</span>
+                <span>Databases</span>
+              </div>
+              <p class="carde__note">University project, still in development — no public link yet.</p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- EXPERIENCE / EDUCATION ---------- -->
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section__head">
+          <span class="section__index">04</span>
+          <h2 id="experience-title">Experience &amp; education</h2>
+        </div>
+
+        <div class="timeline-block">
+          <h3 class="timeline-block__label">Experience</h3>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__date">2026 — Present</p>
+              <h4>Junior Developer — UFV Integrative Project</h4>
+              <p>
+                Collaborating with 6th-semester Computer Science students on an educational
+                game for local 4th-graders, applying OOP and database concepts and
+                contributing to planning and iterative development within a
+                mixed-experience team.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">Sept 2026</p>
+              <h4>Git &amp; GitHub Workshop Instructor — UFV / SetApp</h4>
+              <p>
+                Co-instructed a one-afternoon workshop on Git and GitHub for students of UFV's
+                Technical Program in Information Technology, covering practical version
+                control and collaborative development workflows, alongside AI-assisted
+                development tools for learning, debugging, and problem-solving.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">2025 — Present</p>
+              <h4>Developer — SetApp Junior Enterprise</h4>
+              <p>
+                Contributing to the institutional website using React, TypeScript, Tailwind
+                CSS, and Vite, with a focus on responsive and reusable interfaces, and
+                collaborating through Git/GitHub branches, merges, and pull requests.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">2023</p>
+              <h4>Scholarship Recipient — IF Mais Empreendedor Nacional</h4>
+              <p>
+                Selected for a national extension program supported by the Brazilian Federal
+                Government (SETEC/MEC), focused on innovation and support for small businesses
+                and entrepreneurs. Participated for 9 months with a R$400/month scholarship,
+                gaining practical experience in entrepreneurship and project development.
+              </p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="timeline-block">
+          <h3 class="timeline-block__label">Education</h3>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__date">2025 — 2029 (expected)</p>
+              <h4>B.S. in Computer Science — Universidade Federal de Viçosa (UFV)</h4>
+              <p>Campus Florestal. Currently in the 4th semester.</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">2022 — 2025</p>
+              <h4>Technical Degree in Information Technology — UFV</h4>
+              <p>Campus Florestal, integrated with high school.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ---------- CONTACT ---------- -->
+      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="section__head">
+          <span class="section__index">05</span>
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div class="contact-block">
+          <p>
+            I'm open to conversations about internships, collaborative projects, or just
+            talking through a problem. The fastest way to reach me is email.
+          </p>
+          <a class="button button--primary contact-block__email" href="mailto:thomazaugustoth13@gmail.com">
+            thomazaugustoth13@gmail.com
+          </a>
+          <ul class="contact-block__links">
+            <li><a href="https://github.com/essashr" target="_blank" rel="noopener noreferrer">github.com/essashr ↗</a></li>
+            <li><a href="https://linkedin.com/in/thomaz-augusto-8017a62b7/" target="_blank" rel="noopener noreferrer">linkedin.com/in/thomaz-augusto-8017a62b7 ↗</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Thomaz Augusto Araújo Silva — Florestal, MG, Brazil</p>
+      <ul>
+        <li><a href="https://github.com/essashr" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/thomaz-augusto-8017a62b7/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:thomazaugustoth13@gmail.com">Email</a></li>
+        <li><a href="https://nuntiun.vercel.app" target="_blank" rel="noopener noreferrer">Nuntiun</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
