@@ -245,25 +245,6 @@ button:focus-visible,
   }
 }
 
-.social-links--mobile {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-}
-.social-links--mobile a {
-  display: block;
-  padding: 0.4rem 0.25rem;
-  text-decoration: none;
-  color: var(--ink-muted);
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-}
-.social-links--mobile a:hover { color: var(--accent); }
-@media (min-width: 960px) { .social-links--mobile { display: none; } }
-
 .primary-nav ol { display: flex; flex-direction: column; gap: 0.15rem; }
 .primary-nav a {
   display: flex;
@@ -284,13 +265,18 @@ button:focus-visible,
 }
 
 .sidebar__bottom {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
 }
 @media (min-width: 960px) {
   .sidebar__bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
   }
 }
 
@@ -315,6 +301,12 @@ button:focus-visible,
   color: var(--ink-muted);
   align-self: flex-start;
   transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+/* On mobile the compact icon-only toggle (in the top bar) is used instead
+   of this full labeled button, so hide the full version until desktop. */
+.theme-toggle:not(.theme-toggle--compact) { display: none; }
+@media (min-width: 960px) {
+  .theme-toggle:not(.theme-toggle--compact) { display: flex; }
 }
 .theme-toggle:hover { border-color: var(--border-strong); color: var(--ink); }
 .theme-toggle__icon {
