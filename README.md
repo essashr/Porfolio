@@ -1,5 +1,7 @@
 # Thomaz Augusto — Personal Portfolio
 
+live at: https://essashr.github.io/Porfolio/
+
 A static personal portfolio site built with plain HTML, CSS, and JavaScript —
 no framework, no build step, no backend. It's designed to be deployed
 directly to GitHub Pages.
